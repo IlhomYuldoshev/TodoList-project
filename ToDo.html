@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="norm.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#">Theme</a>
+      <form class="nav-menu">
+        <select name="" id="themeSelect">
+          <option value="default">Theme Default</option>
+          <option value="light">Theme light</option>
+          <option value="dark">Theme dark</option>
+        </select>
+      </form>
+    </nav>
+
+    <div class="form-section">
+      <div class="container">
+        <div class="pos-center">
+          <div class="card">
+            <h4 class="card-title">Add new task</h4>
+            <form action="addTask" name="addTask">
+              <input
+                type="text"
+                name="title"
+                id="title"
+                class="form-control"
+                placeholder="Task title"
+              />
+              <input
+                type="text"
+                name="body"
+                id="body"
+                class="form-control"
+                placeholder="Task body"
+              />
+              <button type="submit" class="btn add-task-btn">Add task</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Form -->
+    <div class="tasks-list-section">
+      <div class="container2">
+        <ul class="list-group">
+          <!-- <li>
+            <span>Task title</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus, atque! Eveniet, molestias eius voluptas reprehenderit
+              dolorem consequatur veniam, voluptates distinctio ipsam laborum
+              sequi voluptate neque, nostrum qui quo modi provident.
+            </p>
+            <button class="btn-del delete-task-btn">Delete task</button>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <!-- End of Tasks -->
+    <script src="app.js"></script>
+  </body>
+</html>
