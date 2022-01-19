@@ -196,7 +196,7 @@ const tasks = [
     }
   }
 
-  function onThememSelectHandler(e) {
+  function onThememSelectHandler() {
     const selectedTheme = themSelect.value;
     const isConfirm = confirm(`Do you want to change theme : ${selectedTheme}`);
     if (!isConfirm) {
@@ -219,4 +219,15 @@ const tasks = [
     // themSelect.textContent(name);
     //!--------------------------------------------------------------------
   }
+
+  window.addEventListener("load", () => {
+    const prevTheme = localStorage.getItem("app_theme")
+    console.log(prevTheme)
+    themSelect.querySelector(`[data-theme=${prevTheme}]`).setAttribute("selected", "true")
+  })
+
 })(tasks);
+
+window.addEventListener("dblclick", () => {
+  console.log("window is double clicked")
+})
